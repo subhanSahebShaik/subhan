@@ -4,4 +4,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.projectsContainer .project{
+  display:flex;
+  width: 80%;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 25px 10px 25px 10px;
+  border-radius: 10px;
+  margin:1px;
+}
+
+.projectsContainer .project .projectDescription{
+  width: 75%;
+}
+
+.projectsContainer .project .projectDescription .title{
+  font-family: Playfair Display;
+  font-weight: bold;
+}
+
+.projectsContainer .project .projectDescription .description{
+  font-family: Sofia;
+}
+
+.projectsContainer .project .projectDescription .urls{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.projectsContainer .project .projectDescription .urls a{
+  text-decoration: none;
+  color: black;
 }
