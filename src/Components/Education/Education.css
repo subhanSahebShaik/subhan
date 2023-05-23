@@ -1,0 +1,62 @@
+.educationContainer {
+  min-height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Sofia;
+  font-size: 20px;
+}
+
+.educationContainer .degree p span,
+.educationContainer .inter p span,
+.educationContainer .ssc p span {
+  font-family: Playfair Display;
+  font-weight: bold;
+}
+
+.educationContainer .degree p,
+.educationContainer .inter p,
+.educationContainer .ssc p {
+  width: 75%;
+  text-align: center;
+  padding-right: 10%;
+}
+
+.educationContainer .degree img,
+.educationContainer .inter img,
+.educationContainer .ssc img {
+  width: 10%;
+  height: 200px;
+  padding-left: 10%;
+}
+
+.educationContainer .degree,
+.educationContainer .inter,
+.educationContainer .ssc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.educationContainer .degree i::after,
+.educationContainer .inter i::after,
+.educationContainer .ssc i::after {
+  content: "";
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 800px) {
+  .educationContainer {
+    font-size: 16px;
+  }
+  .educationContainer .degree img,
+  .educationContainer .inter img,
+  .educationContainer .ssc img {
+    width: 20%;
+  }
+}

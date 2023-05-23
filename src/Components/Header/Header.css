@@ -1,0 +1,11 @@
+.headerContainer {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerContainer h2 {
+  padding: 8px;
+  text-shadow: 1px 1px 10px white;
+}

@@ -1,0 +1,10 @@
+.skillContainer {
+  padding: 20px;
+  width: calc(0.1 * 100vw);
+}
+
+@media screen and (max-width: 800px) {
+  .skillContainer {
+    width: calc(0.22 * 100vw);
+  }
+}

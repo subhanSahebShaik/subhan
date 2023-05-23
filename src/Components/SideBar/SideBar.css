@@ -1,0 +1,42 @@
+.item {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  /* filter: blur(0.5px); */
+}
+.navLink i {
+  padding: 5px;
+}
+.navLink {
+  width: 100%;
+  display: flex;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+.navLink span {
+  padding-left: 10px;
+}
+
+.active {
+  border-right: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 800px) {
+  .sideBar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .navLink {
+    padding: 2px 3px;
+  }
+  .navLink span {
+    display: none;
+  }
+  .active {
+    border-right: 0px;
+    border-bottom: 2px solid black;
+  }
+}

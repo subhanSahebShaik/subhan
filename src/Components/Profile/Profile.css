@@ -1,0 +1,67 @@
+.profileContainer {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.avatar {
+  height: 310px;
+  width: 300px;
+  background-image: radial-gradient(
+    ellipse 48% 40%,
+    orange 0,
+    orange 100%,
+    transparent 0%
+  );
+  transform: rotate(-150deg);
+}
+
+.avatar img {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-image: radial-gradient(rgb(255, 245, 0), rgb(255, 255, 0));
+  top: 30px;
+  left: 20px;
+  transform: rotate(150deg);
+}
+
+.intro{
+  color: white;
+}
+
+.introGreetings{
+  font-family: Sofia;
+}
+
+.name{
+  font-family: Playfair Display;
+  font-size: 40px;
+}
+
+.tagline{
+  font-family: Sofia;
+  float: right;
+}
+
+@media screen and (max-width: 800px) {
+  .profileContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .avatar {
+    height: 250px;
+    width: 250px;
+  }
+  .avatar img {
+    height: 200px;
+    width: 200px;
+    top: 25px;
+  }
+  .name{
+    font-size: 30px;
+  }
+}
